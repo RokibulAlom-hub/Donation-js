@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- links of tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto">
+    <nav class="mx-auto mb-14 sticky top-0 z-50  p-4 backdrop-blur-md bg-white/30 ">
+        <div class="mx-auto ">
+            <div class="navbar bg-base-100 bg-[#F9F7F3]">
+                <div class="navbar-start">
+                  <a class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] text-xl ">Blog</a>
+                </div>
+                <div class="navbar-center flex gap-3">
+                  <img src="./assets/logo.png" alt="">
+                  <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end flex ">
+                  <img src="./assets/coin.png" alt="">
+                  <p id="currentbalance" class="text-xl ">5500</p>
+                  <p>BDT</p>
+                </div>
+              </div>
+            <!-- donation and history button -->
+            <div class="flex justify-center mt-8">
+              <div class="space-x-3">
+              <button id="donation-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg focus:bg-[#B4F461]">Donation</button>
+              <button id="history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg focus:bg-[#B4F461]">History</button>
+              </div>
+            </div>
+              </div>
+              
+    </nav>
+    <main class="mx-auto">
+      <!-- donation hero section part  -->
+       <div id="donation-section">
+        <!-- donation for noakhali -->
+        <div class="hero bg-white rounded-md shadow border-solid border border-slate-500 my-10">
+          <div class="hero-content  flex-col gap-5 lg:flex-row">
+            <img
+              src="./assets/noakhali.png"
+              class="max-w-sm rounded-lg shadow-2xl w-1/2" />
+            <div class="space-y-3 w-1/2">
+              <div class="flex space-x-1 mb">
+                <img src="./assets/coin.png" alt="">
+                <p id="noakhali-blnce">0000</p>
+                <p>BDT</p>
+              </div>
+              <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh!</h1>
+              <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+              <input type="text" id="noakhali-input" class="rounded w-full border border-slate-300 p-2 " placeholder="Write the donation amount">
+              <button id="noakhali-btn" class="btn btn-block bg-[#B4F461] font-bold">Donate now</button>
+            </div>
+          </div>
+        </div>
+        <!-- donation for feni -->
+        <div class="hero bg-white rounded-md shadow border-solid border border-slate-500 my-10">
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="./assets/feni.png"
+              class="max-w-sm rounded-lg shadow-2xl w-1/2" />
+            <div class="space-y-3 w-1/2">
+              <div class="flex space-x-1 mb">
+                <img src="./assets/coin.png" alt="">
+                <p>000</p>
+              </div>
+              <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh!</h1>
+              <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+              <input id="feni-input" class="rounded w-full border border-slate-300 p-2 " placeholder="Write the donation amount">
+              <button id="feni-btn" class="btn btn-block bg-[#B4F461] font-bold">Donate now</button>
+            </div>
+          </div>
+        </div>
+        <!-- donation for aid -->
+        <div class="hero bg-white rounded-md shadow border-solid border border-slate-500 my-10">
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="./assets/quota-protest.png"
+              class="max-w-sm rounded-lg shadow-2xl w-1/2" />
+            <div class="space-y-3 w-1/2">
+              <div class="flex space-x-1 mb">
+                <img src="./assets/coin.png" alt="">
+                <p>000</p>
+              </div>
+              <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+              <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+              <input id="aid-input" class="rounded w-full border border-slate-300 p-2 " placeholder="Write the donation amount">
+              <button id="aid-btn" class="btn btn-block bg-[#B4F461] font-bold">Donate now</button>
+            </div>
+          </div>
+        </div>
+       </div>
+       <!-- history section part -->
+        <div id="history-section" class="hidden">
+          
+        </div>
+    </main>
+    <script src="./JsFiles/donationHistoryButtons.js"></script>
+    <script src="./JsFiles/commonFuntions.js"></script>
+    <script src="./JsFiles/donationCards.js"></script>
+</body>
+</html>
