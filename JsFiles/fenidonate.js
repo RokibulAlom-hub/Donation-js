@@ -28,6 +28,9 @@ document.getElementById('feni-btn').addEventListener('click',function(){
     const historystorage = document.getElementById('history-section');
     historystorage.insertBefore(newhistory,historystorage.firstChild)
     
+    // open modal function
+    showModal()
+    
 
 }
 )

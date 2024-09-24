@@ -25,4 +25,6 @@ addEventListener('click',function(){
     const historystorage = document.getElementById('history-section');
     // now append
     historystorage.insertBefore(historyCreation,historystorage.firstChild);
+    // open modal function
+    showModal()
 })

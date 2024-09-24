@@ -28,4 +28,6 @@ addEventListener('click',function(){
      // now append notification
      historystorage.insertBefore(historycreation,historystorage.firstChild)
 
+     // open modal function
+    showModal()
 })

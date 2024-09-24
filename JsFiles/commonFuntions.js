@@ -35,3 +35,15 @@ function createNotificationhsitory(amount,fileLocation){
       return historyNotification;              
 }
 
+/***************************modal function */
+// Function to display the modal
+function showModal() {
+    const modal = document.getElementById('success-modal');
+    modal.classList.remove('hidden');  // Show modal by removing the 'hidden' class
+}
+
+// Close the modal when the "Close" button is clicked
+document.getElementById('close-modal').addEventListener('click', function() {
+    document.getElementById('success-modal').classList.add('hidden');  // Hide the modal by adding the 'hidden' class
+});
+

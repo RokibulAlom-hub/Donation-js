@@ -16,9 +16,9 @@
                   <a class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] text-xl "
                   href="blog.html">Blog</a>
                 </div>
-                <div class="navbar-center flex gap-3">
+                <div class="navbar-center  gap-3 hidden md:flex">
                   <img src="./assets/logo.png" alt="">
-                  <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+                  <h1 class="lg:text-2xl text-xl font-bold">Donate Bangladesh</h1>
                 </div>
                 <div class="navbar-end flex ">
                   <img src="./assets/coin.png" alt="">
@@ -100,6 +100,19 @@
           
         </div>
     </main>
+    <!-- Modal HTML -->
+      <div id="success-modal" class="hidden">
+        <div  class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center ">
+          <div class="bg-white  rounded-lg p-8 max-w-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-4">Congraits</h2>
+            <img src="./assets/coin.png" alt="">
+            <p>You have donated for humankind</p>
+            <p class="text-2xl font-bold mb-4">Successfuly.</p>
+            <button id="close-modal" class="bg-green-900 text-white px-4 py-2 rounded hover:bg-green-500">Close conformation</button>
+          </div>
+        </div>
+      </div>
+
     <script src="./JsFiles/donationHistoryButtons.js"></script>
     <script src="./JsFiles/noakhalidonate.js"></script>
     <script src="./JsFiles/fenidonate.js"></script>
