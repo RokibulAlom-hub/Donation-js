@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- links of tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto">
+    <nav class="mx-auto mb-14 sticky top-0 z-50  p-4 backdrop-blur-md bg-white/30 ">
+        <div class="mx-auto ">
+            <div class="navbar bg-base-100 bg-[#F9F7F3]">
+                <div class="navbar-start">
+                  <a class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] text-xl "
+                  href="index.html">Donate</a>
+                </div>
+                <div class="navbar-center flex gap-3">
+                  <img src="./assets/logo.png" alt="">
+                  <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end flex ">
+                  <img src="./assets/coin.png" alt="">
+                  <p id="currentbalance" class="text-xl ">5500</p>
+                  <p>BDT</p>
+                </div>
+              </div>
+              </div>
+              
+    </nav>
+    <main>
+        <!-- faq section  -->
+        <div class="collapse collapse-plus bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p class="lg:w-1/2">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, where each node corresponds to a part of the document (such as elements, attributes, and text).</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium"> How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p class="lg:w-1/2">In JavaScript, there are several ways to select elements from the DOM. Here are the most common methods:
+                getelemntbyid(),getElementsByClassName(),getElementsByTagName(),querySelector(),querySelectorAll().
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p class="lg:w-1/2">When an event occurs on an element (such as a click event on a button), the event first happens on the element itself and then bubbles up through its ancestors (parent, grandparent, etc.) until it reaches the document object. This is known as event bubbling.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p class="lg:w-1/2">In JavaScript, you can manipulate an element's attributes and styles using the DOM in various ways. Here's how you can do it:
+                getAttribute(),setAttribute(),removeAttribute()Some common attributes, like id, class, value, src, and href, can be accessed or modified directly through properties.
+              </p>
+            </div>
+          </div>
+    </main>
+</body>
+</html>

@@ -6,7 +6,11 @@ document.getElementById('noakhali-btn').addEventListener
      const noakhalivalue = parseFloat(document.getElementById('noakhali-input').value);
      const currentbalance = parseFloat(document.getElementById('currentbalance').innerText);
      const noakhaliblnce = parseFloat(document.getElementById('noakhali-blnce').innerText);
-     
+     // validaitons for input data
+     if(  isNaN(noakhalivalue) || noakhalivalue === "" 
+          || noakhalivalue > currentbalance ){
+          return alert ('failed to donate')
+          }
      // now minus input money with currentbalnce
      const newbalnce = currentbalance - noakhalivalue;
      // add the donation money in card balance
@@ -19,10 +23,10 @@ document.getElementById('noakhali-btn').addEventListener
      // now we had to add notification on history section
 
      const historyNotification = document.createElement('div');
-     historyNotification.className = "bg-white p-5 rounded w-full shadow-md border";
+     historyNotification.className = "bg-white mb-4 p-5 rounded w-full shadow-md border";
      historyNotification.innerHTML=`
                     <p class ="text-xl font-bold"> $${noakhalivalue} Taka is Donated for famine-2024 at noakhali, Bangladesh </p>
-                    <p class ="text-sm"> Date:${new Date().toLocaleDateString()} GMT +0600 (Bangladesh Standard Time) </p>
+                    <p class ="text-sm"> Date:${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}GMT +0600 (Bangladesh Standard Time) </p>
                     `;
      const historystorage = document.getElementById('history-section') ;
      historystorage.insertBefore(historyNotification,historystorage.firstChild);
@@ -30,5 +34,5 @@ document.getElementById('noakhali-btn').addEventListener
 
 })
 
-const feni = parseFloat(document.getElementById('feni-input').value);
+
 const aid = parseFloat(document.getElementById('aid-input').value);
