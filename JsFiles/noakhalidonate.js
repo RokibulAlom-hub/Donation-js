@@ -12,13 +12,12 @@ addEventListener('click',function(){
           return alert ('something is missing')
      }
      // sum and integar
-     const newcurrentbalance = currentbalance - noakhaliInputValue;
-
      const newnokhalicurrentbalance = noakhaliCurrentBalance + noakhaliInputValue;
+     const newcurrentbalance = currentbalance - noakhaliInputValue;
 
      // now update the values
      const updatenokhalibalance = updateTextById('noakhali-balance',newnokhalicurrentbalance);
-     const updatecurrentbalance = updateTextById('currentbalance',newnokhalicurrentbalance);
+     const updatecurrentbalance = updateTextById('currentbalance',newcurrentbalance);
 
      // createnotification
     const historycreation = createNotificationhsitory(noakhaliInputValue,' famine-2024 at Noakhali, Bangladesh');
