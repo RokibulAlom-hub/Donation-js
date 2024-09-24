@@ -23,3 +23,15 @@ function validateInput(value, maxValue) {
     return (isNaN(value) || value === "" || value > maxValue);
 }
 
+// funtion for create new notificaton
+
+function createNotificationhsitory(amount,fileLocation){
+    const historyNotification = document.createElement('div');
+     historyNotification.className = "bg-white mb-4 p-5 rounded w-full shadow-md border";
+     historyNotification.innerHTML=`
+                    <p class ="text-xl font-bold"> $${amount} Taka is Donated for ${fileLocation} </p>
+                    <p class ="text-sm"> Date:${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}GMT +0600 (Bangladesh Standard Time) </p>
+                    `;
+      return historyNotification;              
+}
+

@@ -1,5 +1,4 @@
 
-
 document.getElementById('feni-btn').addEventListener('click',function(){
     const feniinputvalue =getValueById('feni-input');
     // get the value of innertext
@@ -23,6 +22,11 @@ document.getElementById('feni-btn').addEventListener('click',function(){
     const currentbalanceupdate = updateTextById('currentbalance',newcurrentbalance);
     // update the feni donation balances
     const newfenibalance = updateTextById('feni-balance',newdonationbalance)
+    //create notification for history section through reusable funtion
+   const newhistory = createNotificationhsitory(feniinputvalue,'Flood Relief in Feni,Bangladesh');
+
+    const historystorage = document.getElementById('history-section');
+    historystorage.insertBefore(newhistory,historystorage.firstChild)
     
 
 }
